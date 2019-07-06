@@ -1,0 +1,200 @@
+* {
+    font-family: Roboto;
+    color: #4d4d4d;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+div#container {
+	width: 100%;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+div#nav {
+    display: none;
+}
+
+div.clear {
+	clear: both;
+}
+
+header nav ul {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: fixed;
+	padding: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+	top: 0px;
+	margin: 0px;
+	z-index: 10;
+	border-style: solid;
+	border-width: 0.5px;
+    border-color: #ffffff;
+    -webkit-box-shadow: 0 8px 6px -6px #bfbfbf;
+	   -moz-box-shadow: 0 8px 6px -6px #bfbfbf;
+	        box-shadow: 0 8px 6px -6px #bfbfbf;
+}
+
+header nav ul li {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	font-size: 20px;
+	line-height: 35px;
+}
+
+header nav ul li#name {
+	width: 35%;
+	color: #4dc3ff;
+    height: 80px;
+	line-height: 80px;
+	margin-left: 8%;
+	margin-right: 8%;
+	font-size: 20px;	
+}
+
+header nav ul li a:hover {
+	background-color: #ddd;
+}
+
+header nav ul li a { 
+	text-decoration: none;
+	display: block; 
+	color: #7e7e7e;
+	padding-left: 10%;
+}
+
+a.icon {
+  float: right;
+  position: absolute;
+  top: 23px;
+  right: 40px;
+  font-size: 30px;
+}
+
+a.icon:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+header nav ul li a hr {
+    width: 50%;
+    display: none;
+}
+
+header nav ul li a.active hr {
+    display: none;
+    border: none;
+    height: 2px;
+    background-color: #7e7e7e;
+}
+
+div#left {
+    width: 70%;
+    display: block;
+    margin-left: 5%;
+}
+
+div#left h1 {
+    margin-left: 40%;
+}
+
+div#resume {
+    width: 100%;
+    margin-top: -30px;
+}
+
+div#soon {
+    margin-left: 15%;
+    width: 70%;
+}
+
+.accordion {
+  background-color: #4dc3ff;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-color: white;
+  outline: none;
+  text-align: left;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #0099e6; 
+}
+
+.panel {
+  padding: 0 20px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.caret {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+  
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-top: 15px; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+}
+  
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-right:15px solid white; 
+}
+
+span.date {
+    display: block;
+}
+
+div#right {
+	display: block;
+	width: 75%;
+	margin-top: -15px;
+	margin-left: 12%;
+	padding: 10px;
+}
+
+h1#contact {
+    margin-top: 80px;
+}
+
+div#right a{
+	color: white;
+}
+
+div#right img{
+    width: 45px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+img#headshot {
+   border-radius: 50%;
+   width: 90%;
+   margin-left: 20%;
+}
