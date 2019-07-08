@@ -1,31 +1,35 @@
-/* On mouse over of a nav link add class 'active'
-Then remove class 'active' on mouse off*/
-$("header nav ul li a").hover(
-    function(){ $(this).addClass('active') },
-    function(){ $(this).removeClass('active') }
-)
+/* Top Nav Scrolled */
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".topnav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
 
 /* Toggle between showing and hiding the navigation menu 
 links when the user clicks on the hamburger menu / bar icon */
-let menu = document.getElementById("nav");
+let menu = document.getElementById("nav-links");
+let navbar = document.getElementById("nav");
 hamburger = () => {
     if (menu.style.display === "block") {
         menu.style.display = "none";
+        navbar.classList.remove("active");
     } else {
         menu.style.display = "block";
+        navbar.classList.add("active");
     }
 }
 
 /* Hide and show nav links spending on view */
 $(window).resize(function(){
-    if ($(window).width() >= 870) {
-        menu.style.display = "block";
-    } else {
-        menu.style.display = "none";
-    }
+  if ($(window).width() >= 870) {
+      menu.style.display = "block";
+  } else {
+      menu.style.display = "none";
+  }
 })
 
-// Expand and collapse experience page sections
+/* Expand and collapse experience page sections */
 let acc = document.getElementsByClassName("accordion");
 let i;
 
@@ -45,5 +49,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
-  
