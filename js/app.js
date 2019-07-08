@@ -6,7 +6,7 @@ $(function () {
   });
 });
 
-/* Toggle between showing and hiding the navigation menu 
+/*  Toggle between showing and hiding the navigation menu 
 links when the user clicks on the hamburger menu / bar icon */
 let menu = document.getElementById("nav-links");
 let navbar = document.getElementById("nav");
