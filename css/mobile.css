@@ -35,7 +35,7 @@ body, html {
   }
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #nav-links {
-    display:block;    
+    display:none;    
   }
   
   /* Style navigation menu links */
@@ -43,7 +43,7 @@ body, html {
     color: #777;
     text-decoration: none;
     padding-left: 40px;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     display: block;
   }
@@ -72,9 +72,9 @@ body, html {
   .topnav a.icon {
     float: right;
     position: absolute;
-    top: 23px;
+    top: 10px;
     right: 40px;
-    font-size: 30px;
+    font-size: 40px;
     color: #777;
     padding: 0px 5px;
 
@@ -88,7 +88,7 @@ body, html {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
     opacity: 0.65;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,7 +123,7 @@ body, html {
     color: #fff;
     padding: 18px;
     font-size: 25px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
   }
   
   .caption span.border-2 {
@@ -181,7 +181,7 @@ body, html {
   .section-1 {
     color: #777;
     background-color: white;
-    padding: 100px 60px;
+    padding: 50px 30px;
     margin-top: -50px;
     margin-bottom: -30px;
     text-align: justify;
@@ -227,14 +227,14 @@ body, html {
     background-color:#434d56;
     text-align:center;
     height: 200px;
-    padding: 18px;
+    padding: 30px 18px;
   }
   
   .accordion {
     background-color:#282E34;
     color: #ddd;
     cursor: pointer;
-    padding: 18px 30px;
+    padding: 18px 20px;
     width: 100%;
     border: none;
     outline: none;
