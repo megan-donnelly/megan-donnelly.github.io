@@ -24,14 +24,13 @@ body, html {
 }
 
 .nav-icon {
-  opacity: 0.70;
   width: 30%;
 } 
 
 .favicon {
     width: 60px;
     padding-top: 15px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #nav-links {
@@ -73,11 +72,10 @@ div#nav-links a:hover {
   float: right;
   position: absolute;
   top: 10px;
-  right: 40px;
+  right: 20px;
   font-size: 40px;
   color: #777;
   padding: 0px 5px;
-
 }
 
 
@@ -178,19 +176,23 @@ color: white;
   color: #777;
   background-color: white;
   padding: 50px 30px;
-  margin-top: -50px;
-  margin-bottom: -30px;
   text-align: justify;
 }
 
-.section-1, .bgimg-2, .bgimg-3 {
-  position:relative;
-}
-
 #jump-1, #jump-2, #jump-3 {
-  position:absolute;
+  display: block;
+  position: relative;
+  visibility: hidden;
 }
 
+#jump-1 {
+  top: -133px;
+}
+
+#jump-2 {
+  top: -80px;
+}
+  
 .headshot {
   border-radius: 50%;
   width: 40%;
@@ -223,7 +225,7 @@ div.section-3 div.inner {
   background-color:#434d56;
   text-align:center;
   height: 200px;
-  padding: 30px 18px;
+  padding: 50px 18px;
 }
 
 .accordion {
