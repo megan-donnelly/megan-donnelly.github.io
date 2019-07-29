@@ -213,12 +213,13 @@ body, html {
   }
   
   div.section-3 div.inner {
-    color:#ddd;
-    background-color:#434d56;
-    text-align:center;
-    padding:50px 80px;
-    height: 200px;
-  }
+      color: #f7f7f7;
+      background-color:#434d56;
+      text-align:center;
+      letter-spacing: 1px;
+      height: 100%;      
+      padding: 50px 18px;
+    }
   
   .accordion {
     background-color:#282E34;
@@ -240,7 +241,7 @@ body, html {
   
   .panel {
     padding: 0 18px;
-    display: none;
+    display: block;
     background-color: #ddd;
     color: #333333;
     overflow: hidden;
@@ -279,4 +280,13 @@ body, html {
   
   .inner a{ 
     text-decoration: none;
+  }
+
+  h3.contact {
+    color: #f7f7f7;
+    font-size: 20px;
+  }
+
+  div.footer-icons{
+    padding-top: 20px;
   }

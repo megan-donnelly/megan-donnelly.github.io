@@ -38,7 +38,8 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
     let car = $(this).children(":first");
-    if (panel.style.display === "block") {
+    if (panel.style.display === "block" || panel.style.display === "") {
+      console.log("this is currently block switching to none");
       panel.style.display = "none";
       car.removeClass("arrow-down");
       car.addClass("arrow-left");
