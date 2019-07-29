@@ -185,10 +185,10 @@ body, html {
     position:absolute; 
     top:-82px;
   }
-  
-  .headshot {
+
+  img.headshot {
     border-radius: 50%;
-    width: 35%;
+    width: 25%;
     float: right;
     margin-left: 5%;
   }

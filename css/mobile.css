@@ -192,8 +192,8 @@ color: white;
 #jump-2, #jump-3 {
   top: -80px;
 }
-  
-.headshot {
+ 
+img.headshot {
   border-radius: 50%;
   width: 40%;
   margin-left: 30%;
