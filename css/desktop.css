@@ -1,292 +1,325 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
-  }
-  
-  /* Style the navigation menu */
-  .topnav {
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    background-color: none;
-  }
-  
-  .topnav.scrolled {
-    background-color: #fff !important;
-    opacity: 0.85;
-    transition: background-color 200ms linear;
-    border-color: #ffffff;
-      -webkit-box-shadow: 0 8px 6px -6px #bfbfbf;
-         -moz-box-shadow: 0 8px 6px -6px #bfbfbf;
-              box-shadow: 0 8px 6px -6px #bfbfbf;
-  }
-  
-  .nav-icon {
-    width: 30%;
-  } 
-  
-  .favicon {
-      width: 60px;
-      padding-top: 15px;
-      padding-left: 45px;
-  }
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #nav-links {
-    float: right;
-    margin-top: -66px;
-    margin-right: 60px;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: #fff;
-    margin-top: 14px; 
-    margin-left: 20px;
-    margin-right: 20px;  
-    text-decoration: none;
-    font-size: 15px;
-    letter-spacing: 2px;
-    display: block;
-    float: left;
-  }
-  
-  .topnav.scrolled a {
-    color: #777;
-  }
-  
-  a hr {
-    width: 100%;
-    border: none;
-    height: 2px;
-    background-color: #fff;
-    display: none;
-  }
-  
-  .topnav.scrolled a hr {
-    background-color: #777;
-  }
-  
-  a:hover hr {
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    display: none;
-  }
-  
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .bgimg-1 {
-    background-image: url("../images/bgimg-1.jpg");
-    min-height: 100%;
-  }
-  
-  .bgimg-2 {
-    background-image: url("../images/bgimg-2.jpg");
-    min-height: 300px;
-  }
-  
-  .bgimg-3 {
-    background-image: url("../images/bgimg-3.jpg");
-    min-height: 300px
-  }
-  
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
-  
-  .caption span.border-2 {
-    background-color:transparent;
-    color: #f7f7f7;
-    padding: 18px;
-    font-size:25px;
-    letter-spacing: 10px;
-  }
-  
-  /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-  .icon-bar {
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.5 'Lato', sans-serif;
+  color: #777;
+}
+
+/* Style the navigation menu */
+.topnav {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: none;
+}
+
+.topnav.scrolled {
+  background-color: #fff !important;
+  opacity: 0.85;
+  transition: background-color 200ms linear;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 8px 6px -6px #bfbfbf;
+  -moz-box-shadow: 0 8px 6px -6px #bfbfbf;
+  box-shadow: 0 8px 6px -6px #bfbfbf;
+}
+
+.nav-icon {
+  width: 30%;
+}
+
+.favicon {
+  width: 60px;
+  padding-top: 15px;
+  padding-left: 45px;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #nav-links {
+  float: right;
+  margin-top: -66px;
+  margin-right: 60px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #fff;
+  margin-top: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  display: block;
+  float: left;
+}
+
+.topnav.scrolled a {
+  color: #777;
+}
+
+a hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #fff;
+  display: none;
+}
+
+.topnav.scrolled a hr {
+  background-color: #777;
+}
+
+a:hover hr {
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: none;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('../images/bgimg-1.jpg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url('../images/bgimg-2.jpg');
+  min-height: 300px;
+}
+
+.bgimg-3 {
+  background-image: url('../images/bgimg-3.jpg');
+  min-height: 300px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption span.border-2 {
+  background-color: transparent;
+  color: #f7f7f7;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
   position: fixed;
   top: 50%;
   z-index: 10;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  }
-  
-  /* Style the icon bar links */
-  .icon-bar a {
+}
+
+/* Style the icon bar links */
+.icon-bar a {
   display: block;
   text-align: center;
   padding: 16px;
   transition: all 0.3s ease;
   color: white;
   font-size: 15px;
-  }
-  
-  /* Style the social media icons with color, if you want */
-  .icon-bar a:hover {
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
   background-color: #ddd;
-  }
-  
-  .email {
-  background: #55ACEE;
+}
+
+.email {
+  background: #55acee;
   color: white;
-  }
-  
-  .phone {
+}
+
+.phone {
   background: #719bac;
   color: white;
-  }
-  
-  .linkedin {
+}
+
+.linkedin {
   background: #007bb5;
   color: white;
-  }
-  
-  .github {
+}
+
+.github {
   background: #814f8f;
   color: white;
-  }
-  .section-1 {
-    color: #777;
-    background-color: white;
-    padding: 110px;
-    text-align: justify;
-  }
-  
-  .section-1, .bgimg-2, .bgimg-3 {
-    position:relative;
-  }
-  
-  #jump-1, #jump-2, #jump-3 {
-    position:absolute; 
-    top:-82px;
-  }
+}
 
-  img.headshot {
-    border-radius: 50%;
-    width: 25%;
-    float: right;
-    margin-left: 5%;
-  }
-  
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
-  }
-  
-  .outer {
-    position: relative;
-  }
-  
-  div.section-2 div.inner {
-    color:#ddd;
-    background-color:#282E34;
-    text-align:center;
-    padding:50px 80px;
-    text-align: justify;
-  }
-  
-  div.section-3 div.inner {
-      color: #f7f7f7;
-      background-color:#434d56;
-      text-align:center;
-      letter-spacing: 1px;
-      height: 100%;      
-      padding: 50px 18px;
-    }
-  
-  .accordion {
-    background-color:#282E34;
-    color: #ddd;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    font-size: 25px;
-    letter-spacing: 5px;
-    transition: 0.4s;
-  }
-  
-  button.active, .accordion:hover {
-    background-color: #2c333a; 
-  }
-  
-  .panel {
-    padding: 0 18px;
-    display: block;
-    background-color: #ddd;
-    color: #333333;
-    overflow: hidden;
-  }
-  
-  .caret {
-      float: right;
-      margin-top: 5px;
-      margin-right: 20px;
-  }
-    
-  .arrow-down {
-      width: 0; 
-      height: 0; 
-      margin-top: 15px; 
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid #ddd;
-  }
-    
-  .arrow-left {
-      width: 0; 
-      height: 0; 
-      border-top: 15px solid transparent;
-      border-bottom: 15px solid transparent; 
-      border-right:15px solid #ddd; 
-  }
-  
-  span.date {
-      float: right;
-  }
-  
-  .inner img {
-      width: 45px;
-  }
-  
-  .inner a{ 
-    text-decoration: none;
-  }
+/*Section Content*/
+.section-1 {
+  color: #777;
+  background-color: white;
+  padding: 110px;
+  text-align: justify;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 
-  h3.contact {
-    color: #f7f7f7;
-    font-size: 20px;
-  }
+.section-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+}
 
-  div.footer-icons{
-    padding-top: 20px;
-  }
+#jump-1,
+#jump-2,
+#jump-3 {
+  position: absolute;
+  top: -82px;
+}
+
+img#headshot {
+  border-radius: 50%;
+  max-width: 750px;
+  max-height: 750px;
+  height: 30%;
+  width: 30%;
+  margin-left: 3%;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px 'Lato', sans-serif;
+  color: #111;
+}
+
+.outer {
+  position: relative;
+}
+
+div.section-2 div.inner {
+  color: #ddd;
+  background-color: #282e34;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+div.section-3 div.inner {
+  color: #f7f7f7;
+  background-color: #434d56;
+  text-align: center;
+  letter-spacing: 1px;
+  height: 100%;
+  padding: 50px 18px;
+}
+
+#download {
+  background-color: #2c333a;
+  padding: 2%;
+  margin: 2% 2% 2% 0;
+  border-radius: 5px;
+}
+
+#download a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+#download:hover,
+#download:hover > a {
+  background-color: #ddd;
+  color: #2c333a;
+}
+
+.accordion {
+  background-color: #282e34;
+  color: #ddd;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 25px;
+  letter-spacing: 5px;
+  transition: 0.4s;
+}
+
+button.active,
+.accordion:hover {
+  background-color: #2c333a;
+}
+
+.panel {
+  padding: 0 18px;
+  display: block;
+  background-color: #ddd;
+  color: #333333;
+  overflow: hidden;
+}
+
+.caret {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  margin-top: 15px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ddd;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #ddd;
+}
+
+span.date {
+  float: right;
+}
+
+.inner img {
+  width: 45px;
+}
+
+.inner a {
+  text-decoration: none;
+}
+
+h3.contact {
+  color: #f7f7f7;
+  font-size: 20px;
+}
+
+div.footer-icons {
+  padding-top: 20px;
+}
