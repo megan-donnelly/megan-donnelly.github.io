@@ -178,7 +178,7 @@ a:hover hr {
 .section-1 {
   color: #777;
   background-color: white;
-  padding: 110px;
+  padding: 50px 70px;
   text-align: justify;
   display: flex;
   flex-direction: row-reverse;
@@ -208,7 +208,7 @@ img#headshot {
 }
 
 h3 {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   font: 20px 'Lato', sans-serif;
   color: #111;
@@ -236,21 +236,27 @@ div.section-3 div.inner {
 }
 
 #download {
-  background-color: #2c333a;
-  padding: 2%;
+  text-align: right;
+}
+
+#download-btn {
+  background-color: #ddd;
+  padding: 5px;
   margin: 2% 2% 2% 0;
   border-radius: 5px;
+  display: inline-block;
+  text-align: right;
 }
 
-#download a {
+#download-btn a {
   text-decoration: none;
-  color: #ddd;
+  color: #2c333a;
 }
 
-#download:hover,
-#download:hover > a {
-  background-color: #ddd;
-  color: #2c333a;
+#download-btn:hover,
+#download-btn:hover > a {
+  background-color: #2c333a;
+  color: #ddd;
 }
 
 .accordion {
@@ -278,6 +284,10 @@ button.active,
   background-color: #ddd;
   color: #333333;
   overflow: hidden;
+}
+
+.panel a {
+  color: #333333;
 }
 
 .caret {
