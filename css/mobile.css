@@ -80,9 +80,10 @@ div#nav-links a:hover {
   padding: 0px 5px;
 }
 
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+.bgimg-hero,
+.bgimg-projects,
+.bgimg-experience,
+.bgimg-contact {
   position: relative;
   opacity: 0.85;
   background-attachment: scroll;
@@ -92,16 +93,20 @@ div#nav-links a:hover {
   min-height: 100%;
 }
 
-.bgimg-1 {
-  background-image: url('../images/bgimg-1.jpg');
+.bgimg-hero {
+  background-image: url('../images/bgimg-hero.jpg');
 }
 
-.bgimg-2 {
-  background-image: url('../images/bgimg-2.jpg');
+.bgimg-projects {
+  background-image: url('../images/bgimg-projects.jpg');
 }
 
-.bgimg-3 {
-  background-image: url('../images/bgimg-3.jpg');
+.bgimg-experience {
+  background-image: url('../images/bgimg-experience.jpg');
+}
+
+.bgimg-contact {
+  background-image: url('../images/bgimg-contact.jpg');
 }
 
 .caption {
@@ -173,28 +178,24 @@ div#nav-links a:hover {
   background: #814f8f;
   color: white;
 }
-.section-1 {
+.section-about {
   color: #777;
   background-color: white;
   padding: 50px 30px;
   text-align: justify;
 }
 
-#jump-1,
-#jump-2,
-#jump-3 {
+#jump-about,
+#jump-projects,
+#jump-experience,
+#jump-contact {
   display: block;
   position: relative;
   visibility: hidden;
 }
 
-#jump-1 {
+#jump-about {
   top: -133px;
-}
-
-#jump-2,
-#jump-3 {
-  top: -80px;
 }
 
 img#headshot {
@@ -209,6 +210,9 @@ h3 {
   letter-spacing: 3px;
   text-transform: uppercase;
   font: 20px 'Lato', sans-serif;
+}
+
+.panel h3 {
   color: #111;
 }
 
@@ -216,7 +220,7 @@ h3 {
   position: relative;
 }
 
-div.section-2 div.inner {
+div.section-experience div.inner {
   color: #ddd;
   background-color: #282e34;
   text-align: center;
@@ -224,7 +228,7 @@ div.section-2 div.inner {
   text-align: justify;
 }
 
-div.section-3 div.inner {
+div.section-contact div.inner {
   color: #f7f7f7;
   background-color: #434d56;
   text-align: center;

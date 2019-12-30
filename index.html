@@ -33,40 +33,30 @@
       </div>
       <!-- Navigation links (hidden by default)  -->
       <div id="nav-links">
-        <a onclick="scrollToDiv('jump-1')"
+        <a onclick="scrollToDiv('jump-about')"
           >ABOUT
           <hr
         /></a>
-        <a onclick="scrollToDiv('jump-2')"
+        <a onclick="scrollToDiv('jump-projects')"
+          >PROJECTS
+          <hr
+        /></a>
+        <a onclick="scrollToDiv('jump-experience')"
           >EXPERIENCE
           <hr
         /></a>
-        <a onclick="scrollToDiv('jump-3')"
+        <a onclick="scrollToDiv('jump-contact')"
           >CONTACT
           <hr
         /></a>
       </div>
-      <!-- <div id="nav-links">
-        <a href="#jump-1"
-          >ABOUT
-          <hr
-        /></a>
-        <a href="#jump-2"
-          >EXPERIENCE
-          <hr
-        /></a>
-        <a href="#jump-3"
-          >CONTACT
-          <hr
-        /></a>
-      </div> -->
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links  -->
       <a href="javascript:void(0);" class="icon" onclick="hamburger()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
-    <div class="bgimg-1">
+    <div class="bgimg-hero">
       <div class="caption">
         <span class="border">MEGAN DONNELLY</span>
       </div>
@@ -90,8 +80,8 @@
       ></a>
     </div>
 
-    <div class="section-1">
-      <a id="jump-1"></a>
+    <div class="section-about">
+      <a id="jump-about"></a>
       <img id="headshot" src="images/headshot.jpg" />
       <div id="about">
         <h3>ABOUT ME</h3>
@@ -129,14 +119,61 @@
       </div>
     </div>
 
-    <div class="bgimg-2">
-      <a id="jump-2"></a>
+    <div class="bgimg-projects">
+      <a id="jump-projects"></a>
+      <div class="caption">
+        <span class="border-2">PROJECTS</span>
+      </div>
+    </div>
+
+    <div class="section-projects outer">
+      <div class="inner">
+        <div id="projects">
+          <div class="single-project">
+            <div class="project-content">
+              <h3>SoleMate</h3>
+              <p>
+                SoleMate is a fitness based social media app that leverages
+                geolocation technology to match users with runners in their
+                area. Users are able to message and request runs with people
+                they've matched with, generate customized routes, and track
+                running info in real-time. When users aren't on the app,
+                SoleMate alerts them to incoming requests and messages via push
+                notifications.
+              </p>
+              <h4>TECH STACK</h4>
+              <ul>
+                <li>React Native</li>
+                <li>Redux</li>
+                <li>Expo</li>
+                <li>Sockets.io</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>Google Maps API</li>
+              </ul>
+              <a
+                class="project-btn"
+                target="_blank"
+                href="https://github.com/Vue-gles/sole-mate"
+                >VIEW ON GITHUB</a
+              >
+            </div>
+            <div class="project-img-div">
+              <img class="project-img" src="images/solemate_home.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgimg-experience">
+      <a id="jump-experience"></a>
       <div class="caption">
         <span class="border-2">EXPERIENCE</span>
       </div>
     </div>
 
-    <div class="section-2 outer">
+    <div class="section-experience outer">
       <div class="inner">
         <div id="download">
           <button id="download-btn">
@@ -403,20 +440,24 @@
       </div>
     </div>
 
-    <div class="bgimg-3">
-      <a id="jump-3"></a>
+    <div class="bgimg-contact">
+      <a id="jump-contact"></a>
       <div class="caption">
         <span id="contact" class="border-2">CONTACT</span>
       </div>
     </div>
 
-    <div class="section-3 outer">
+    <div class="section-contact outer">
       <div class="inner">
         <h3 class="contact">Megan Donnelly</h3>
         <h4>Software Engineer</h4>
 
         <p>
-          Feel free to reach out with any business inquiries.
+          If you want to collaborate on any web or mobile applications, please
+          feel free to reach out.
+        </p>
+        <p>
+          I'm available for freelance projects and full-time employment.
         </p>
         <div class="footer-icons">
           <a target="_blank" href="mailto:md2942@nyu.edu">
