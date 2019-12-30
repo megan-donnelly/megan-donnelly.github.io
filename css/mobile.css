@@ -98,12 +98,12 @@ div#nav-links a:hover {
 
 .bgimg-2 {
   background-image: url('../images/bgimg-2.jpg');
-  min-height: 250px;
+  min-height: 90%;
 }
 
 .bgimg-3 {
   background-image: url('../images/bgimg-3.jpg');
-  min-height: 250px;
+  min-height: 90%;
 }
 
 .caption {

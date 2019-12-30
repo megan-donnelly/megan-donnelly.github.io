@@ -96,12 +96,12 @@ a:hover hr {
 
 .bgimg-2 {
   background-image: url('../images/bgimg-2.jpg');
-  min-height: 300px;
+  min-height: 100%;
 }
 
 .bgimg-3 {
   background-image: url('../images/bgimg-3.jpg');
-  min-height: 300px;
+  min-height: 100%;
 }
 
 .caption {
