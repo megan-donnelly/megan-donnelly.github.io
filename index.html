@@ -26,22 +26,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body spellcheck="true">
     <div id="nav" class="topnav">
       <div class="nav-icon">
         <img class="favicon" src="images/favicon.png" />
       </div>
       <!-- Navigation links (hidden by default)  -->
       <div id="nav-links">
-        <a href="#jump-1"
+        <a onclick="scrollToDiv('jump-about')"
           >ABOUT
           <hr
         /></a>
-        <a href="#jump-2"
+        <a onclick="scrollToDiv('jump-projects')"
+          >PROJECTS
+          <hr
+        /></a>
+        <a onclick="scrollToDiv('jump-experience')"
           >EXPERIENCE
           <hr
         /></a>
-        <a href="#jump-3"
+        <a onclick="scrollToDiv('jump-contact')"
           >CONTACT
           <hr
         /></a>
@@ -52,7 +56,7 @@
       </a>
     </div>
 
-    <div class="bgimg-1">
+    <div class="bgimg-hero">
       <div class="caption">
         <span class="border">MEGAN DONNELLY</span>
       </div>
@@ -76,146 +80,163 @@
       ></a>
     </div>
 
-    <div class="section-1">
-      <a id="jump-1"></a>
+    <div class="section-about">
+      <a id="jump-about"></a>
       <img id="headshot" src="images/headshot.jpg" />
       <div id="about">
         <h3>ABOUT ME</h3>
 
         <p>
-          Hi! I'm Megan and I'm currently studying computer software engineering
-          at Fullstack Academy of Code in NYC.
+          <strong>Hello! I'm Megan,</strong> a full-stack software engineer based in NYC with a background in marketing and quality assurance.</p>
+
+          <p>In college, I received a minor in web programming and applications, and I found that I have a passion for learning new technologies and platforms. To continue to pursue my passion for tech, I got a job in quality assurance at a marketing tech company, where I got exposure to what it’s like being a part of an agile team in a product development organization. Although I enjoyed my job, I found that I still wanted to work more closely with code, which is why I decided to pursue a
+          career in software engineering. I enrolled in Fullstack Academy's full-time immersive software engineering program and am now working as a Software Engineering Teaching Fellow at The
+          Grace Hopper Program at Fullstack Academy. Upon completion of the fellowship, I'm looking for a full-stack software engineering position in a collaborative work environment, where I can use my skills to make a big impact while continuing to learn and grow from my peers.
         </p>
 
-        <p>
-          I first fell in love with coding during my undergraduate studies at
-          NYU, where I minored in Web Programming and Applications. After
-          graduating, I began working at BounceX, a marketing technology
-          company, as a product integrity analyst and manager. In my role, I
-          collaborated with product owners and software engineers to create user
-          story acceptance criteria, wrote and executed tests to verify new and
-          existing product features, and developed trainings and product
-          documentation for internal and external use.
-        </p>
-
-        <p>
-          Although I enjoyed my job, I found that I wanted to be more involved
-          with the creation of the code that brought the product to life.
-          Outside of work, I began to brush up on my coding skills by building
-          small applications, until I felt ready to take the leap to pursue a
-          career in software engineering full-time at Fullstack Academy. Upon
-          completion of the Fullstack Academy program, I'm looking to join a
-          collaborative product development team, where I can use my technical
-          skills to solve problems and continue learning from my peers.
-        </p>
+        <p>Here's a few technologies I've been working with recently:</p>
+        <div id="about-technologies">
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Sequelize</li>
+            <li>PostgreSQL</li>
+            <li>React / React Native</li>
+            <li>Redux</li>
+          </ul>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Electron</li>
+            <li>Git</li>
+            <li>Sockets.io</li>
+            <li>Charts.js</li>
+            <li>Google Maps API</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="bgimg-2">
-      <a id="jump-2"></a>
+    <div class="bgimg-projects">
+      <a id="jump-projects"></a>
+      <div class="caption">
+        <span class="border-2">PROJECTS</span>
+      </div>
+    </div>
+
+    <div class="section-projects outer">
+      <div class="inner">
+        <div id="projects">
+          <div class="single-project">
+            <div class="project-content">
+              <h3>SoleMate</h3>
+              <p>
+                SoleMate is a fitness based social media app that leverages
+                geolocation technology to match users with runners in their
+                area. Users are able to message and request runs with people
+                they've matched with, generate customized routes, and track
+                running info in real-time. When users aren't on the app,
+                SoleMate alerts them to incoming requests and messages via push
+                notifications.
+              </p>
+              <h4>TECH STACK</h4>
+              <ul>
+                <li>React Native</li>
+                <li>Redux</li>
+                <li>Expo</li>
+                <li>Sockets.io</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Google Maps API</li>
+              </ul>
+              <a
+                class="project-btn"
+                target="_blank"
+                href="https://github.com/Vue-gles/sole-mate"
+                >VIEW ON GITHUB</a
+              >
+            </div>
+            <div class="project-img-div">
+              <img class="project-img-phone" src="images/solemate_home.png" />
+            </div>
+          </div>
+          <hr>
+          <div class="single-project">
+            <div class="project-content">
+              <h3>Retire Rich</h3>
+              <p>
+                An Electron app that projects how long cash and 401k savings will last after retirement. Users input information about themselves, such as income, spending habits, desired retirement age, etc., in order to generate a graph of their savings over time. Retire Rich also allows users to download a PDF of their projected savings.
+              <h4>TECH STACK</h4>
+              <ul>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Chart.js</li>
+                <li>Electron</li>
+              </ul>
+              <a
+                class="project-btn"
+                target="_blank"
+                href="https://github.com/megan-donnelly/retire-rich"
+                >VIEW ON GITHUB</a
+              >
+            </div>
+            <div class="project-img-div">
+              <img class="project-img-laptop" src="images/retirerich_home.png" />
+            </div>
+          </div>
+          <hr>
+          <div class="single-project">
+            <div class="project-content opposite">
+              <h3>Yachts Don't Stop</h3>
+              <p>
+                An e-commerce site for selling yachts. Yachts Don't Stop utlizes the technologies listed below to allow users or guests to create carts, continue shiopping, edit their carts, and checkout. Yachts Don't Stop also takes care of inventory management, ensuring that any price changes are represented in a user's cart until the time of purchase, and that no out-of-stock products are listed as available.
+              </p>
+              <h4>TECH STACK</h4>
+              <ul>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <a
+                class="project-btn"
+                target="_blank"
+                href="https://github.com/destinys-append-child/grace-shopper"
+                >VIEW ON GITHUB</a
+              >
+            </div>
+            <div class="project-img-div">
+              <img class="project-img-laptop" src="images/yachtsdontstop_cart.png" />
+            </div>
+          </div>
+          </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="bgimg-experience">
+      <a id="jump-experience"></a>
       <div class="caption">
         <span class="border-2">EXPERIENCE</span>
       </div>
     </div>
 
-    <div class="section-2 outer">
+    <div class="section-experience outer">
       <div class="inner">
+
         <div id="download">
-          <button id="download-btn">
-            <a href="./MeganDonnellyResume.pdf" target="_blank">Download PDF</a>
-          </button>
+          <a
+            class="project-btn"
+            id="download-btn"
+            target="_blank"
+            href="./MeganDonnellyResume.pdf"
+            >DOWNLOAD RESUME
+          </a>
         </div>
+
         <div id="resume">
-          <button class="accordion active">
-            Technologies
-            <div class="caret arrow-down"></div>
-          </button>
-          <div class="panel">
-            <ul>
-              <li>
-                <strong>Proficient:</strong> JavaScript, Node, Express,
-                Sequelize, React, Redux, Sockets.io, Postman, Jira, Confluence
-              </li>
-              <li>
-                <strong>Knowledgeable:</strong> HTML, CSS, Git, SQL, PostgreSQL,
-                React Native, Electron, Photoshop
-              </li>
-              <li>
-                <strong>Familiar:</strong> Mocha, Chai, Jasmine, Python,
-                Chart.js, Google Maps API, Looker, Datadog
-              </li>
-            </ul>
-          </div>
-          <button class="accordion active">
-            Projects
-            <div class="caret arrow-down"></div>
-          </button>
-          <div class="panel">
-            <h3>SoleMate<span class="date">Nov 2019</span></h3>
-            <ul>
-              <li>
-                <strong>Role:</strong> Developed full stack run request,
-                notification, and messaging functionality, and led design of the
-                application
-              </li>
-              <li>
-                <strong>Description:</strong> A 14-day group project aimed at
-                creating a React Native app that allows users to find running
-                buddies, schedule runs, and generate routes
-              </li>
-              <li>
-                <strong>Technologies:</strong> JavaScript, Node, Express, React
-                Native, Redux, Sockets.io, Google Maps API
-              </li>
-              <li>
-                <strong>Repository:</strong>
-                <a href="https://github.com/Vue-gles/sole-mate"
-                  >github.com/Vue-gles/sole-mate</a
-                >
-              </li>
-            </ul>
-            <h3>Retire Rich<span class="date">Nov 2019</span></h3>
-            <ul>
-              <li><strong>Role:</strong> Sole Developer</li>
-              <li>
-                <strong>Description:</strong> A 4-day solo project aimed at
-                creating a calculator that projects how long cash/401k savings
-                will last after retirement
-              </li>
-              <li>
-                <strong>Technologies:</strong> JavaScript, Electron, React,
-                Redux, Chart.js
-              </li>
-              <li>
-                <strong>Repository:</strong>
-                <a href="https://github.com/megan-donnelly/retire-rich"
-                  >github.com/megan-donnelly/retire-rich</a
-                >
-              </li>
-            </ul>
-            <h3>Yachts Don't Stop<span class="date">Nov 2019</span></h3>
-            <ul>
-              <li>
-                <strong>Role:</strong> Developed full stack cart and order
-                history functionality, including unit tests, and wrote
-                authorization middleware
-              </li>
-              <li>
-                <strong>Description:</strong> An 8-day group project aimed at
-                creating a fully functional e-commerce web app selling yachts
-              </li>
-              <li>
-                <strong>Technologies:</strong> JavaScript, Node, Express, React,
-                Redux, OAuth, Nodemailer, Semantic UI
-              </li>
-              <li>
-                <strong>Repository:</strong>
-                <a href="https://github.com/destinys-append-child/grace-shopper"
-                  >github.com/destinys-append-child/grace-shopper</a
-                >
-              </li>
-            </ul>
-          </div>
 
           <button class="accordion active" data-toggle="dropdown">
             Education
@@ -227,10 +248,10 @@
             </h3>
             <h4>Computer Software Engineering</h4>
             <p>
-              Fullstack Academy is a 3-month full-time immersive web development
-              program. The JavaScript-oriented curriculum includes Node,
-              Express, PostgreSQL, React, Redux, advanced HTML & CSS, and CS
-              fundamentals.
+              Fullstack Academy is a 3-month full-time immersive software
+              engineering program. The JavaScript-oriented curriculum includes
+              Node.js, Express, PostgreSQL, React, Redux, advanced HTML & CSS, and
+              CS fundamentals.
             </p>
             <hr />
             <h3>
@@ -259,6 +280,30 @@
             <div class="caret arrow-down"></div>
           </button>
           <div class="panel">
+            <h3>Grace Hopper<span class="date">Jan 2020 – Apr 2020</span></h3>
+            <h4>Software Engineering Teaching Fellow</h4>
+            <ul>
+              <li>
+                Serves as a teaching assistant for students in The Grace Hopper
+                Program at Fullstack Academy’s immersive software engineering
+                program
+              </li>
+              <li>
+                Acts as an Agile Project Manager for teams of up to 5 developers
+              </li>
+              <li>
+                Conducts algorithm white-boarding exercises
+              </li>
+              <li>
+                Conducts admissions interviews
+              </li>
+              <li>
+                Contributes to Fullstack Academy’s ‘Learndot’ educational
+                platform
+              </li>
+            </ul>
+            <hr />
+
             <h3>BounceX<span class="date">Jan 2017 – Sep 2019</span></h3>
             <h4>Product Integrity Manager</h4>
             <ul>
@@ -295,6 +340,7 @@
               </li>
             </ul>
             <hr />
+
             <h3>Billboard<span class="date">June 2016 – Sep 2016</span></h3>
             <h4>Digital Analytics Intern</h4>
             <ul>
@@ -313,72 +359,28 @@
             </ul>
           </div>
 
-          <button class="accordion active">
-            Honors
-            <div class="caret arrow-down"></div>
-          </button>
-          <div class="panel">
-            <h3>Global Media Scholar<span class="date">Jan 2017</span></h3>
-            <p>
-              A scholarship program that, through two consecutive study abroad
-              experiences, allows students to compare and analyze the highly
-              dynamic range of activities associated with the globalization of
-              media and cultural production, distribution, and reception.
-            </p>
-            <hr />
-            <h3>
-              Steinhardt Dean’s Honors Seminar<span class="date">Dec 2014</span>
-            </h3>
-            <p>
-              The Steinhardt Dean’s Honors Seminar course hones the professional
-              skills of students that are selected on the basis of outstanding
-              records of academic achievement, leadership, and service.
-            </p>
-            <hr />
-            <h3>
-              Dean’s Global Honors Seminar<span class="date">Dec 2014</span>
-            </h3>
-            <p>
-              The Dean’s Global Honors Seminar, Global Movements for Racial
-              Justice, gives high achieving students the opportunity to engage
-              with racial justice activists to understand how movement
-              organizations operate.
-            </p>
-            <hr />
-            <h3>Girl Scout Gold Award<span class="date">May 2012</span></h3>
-            <p>
-              The highest achievement within the Girl Scouts of the USA. It
-              requires a minimum of 80 hours of work in planning and actually
-              completing the project. Awarded for designing and building
-              wheelchair-accessible flowerbeds for a special services school.
-            </p>
-          </div>
-
-          <button class="accordion active">
-            Interests
-            <div class="caret arrow-down"></div>
-          </button>
-          <div class="panel">
-            <p>Dog owner, printmaking, running, baking, and documentary film</p>
-          </div>
         </div>
       </div>
     </div>
 
-    <div class="bgimg-3">
-      <a id="jump-3"></a>
+    <div class="bgimg-contact">
+      <a id="jump-contact"></a>
       <div class="caption">
         <span id="contact" class="border-2">CONTACT</span>
       </div>
     </div>
 
-    <div class="section-3 outer">
+    <div class="section-contact outer">
       <div class="inner">
         <h3 class="contact">Megan Donnelly</h3>
         <h4>Software Engineer</h4>
 
         <p>
-          Feel free to reach out with any business inquiries.
+          If you want to collaborate on any web or mobile applications, please
+          feel free to reach out.
+        </p>
+        <p>
+          I'm available for freelance projects and full-time employment.
         </p>
         <div class="footer-icons">
           <a target="_blank" href="mailto:md2942@nyu.edu">
