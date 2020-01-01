@@ -182,7 +182,6 @@ a:hover hr {
 /*Section Content*/
 .section-about {
   color: #777;
-  background-color: white;
   padding: 50px 70px;
   text-align: justify;
   display: flex;
@@ -223,6 +222,11 @@ h3 {
   font: 20px 'Lato', sans-serif;
 }
 
+#about-technologies {
+  display: flex;
+  flex-direction: row;
+}
+
 .panel h3 {
   color: #111;
 }
@@ -252,6 +256,7 @@ div.section-projects div.inner {
   display: flex;
   flex-direction: row;
   text-align: justify;
+  padding-bottom: 25px;
 }
 
 .project-content {
@@ -264,7 +269,7 @@ div.section-projects div.inner {
   text-decoration: none;
   width: 150px;
   text-align: center;
-  padding: 5px;
+  padding: 8px;
   border: 1px solid #fff;
   border-radius: 6px;
 }
@@ -281,8 +286,14 @@ div.section-projects div.inner {
   min-width: 40%;
 }
 
-.project-img {
-  width: 60%;
+.project-img-phone {
+  max-width: 50%;
+  max-height: 80%;
+}
+
+.project-img-laptop {
+  max-width: 90%;
+  max-height: 80%;
 }
 
 div.section-experience div.inner {
@@ -309,9 +320,15 @@ div.section-contact div.inner {
 
 #download {
   text-align: right;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
-#download-btn {
+#download-btn:hover {
+  background-color: #424d57;
+}
+
+/* #download-btn {
   background-color: #282e34;
   padding: 5px;
   margin: 2% 2% 2% 0;
@@ -329,7 +346,7 @@ div.section-contact div.inner {
 
 #download-btn:hover > a {
   text-decoration: underline;
-}
+} */
 
 .accordion {
   background-color: #282e34;
