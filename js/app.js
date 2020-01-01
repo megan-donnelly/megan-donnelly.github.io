@@ -6,6 +6,7 @@ $(function() {
   });
 });
 
+/* Smooth Scroll to Sections */
 function scrollToDiv(id) {
   let elmnt = document.getElementById(id);
   elmnt.scrollIntoView({ behavior: 'smooth' });
