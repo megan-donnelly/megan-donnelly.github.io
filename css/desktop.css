@@ -216,15 +216,15 @@ img#headshot {
   margin-left: 3%;
 }
 
+#about-technologies {
+  display: flex;
+  flex-direction: row;
+}
+
 h3 {
   letter-spacing: 3px;
   text-transform: uppercase;
   font: 20px 'Lato', sans-serif;
-}
-
-#about-technologies {
-  display: flex;
-  flex-direction: row;
 }
 
 .panel h3 {
@@ -327,26 +327,6 @@ div.section-contact div.inner {
 #download-btn:hover {
   background-color: #424d57;
 }
-
-/* #download-btn {
-  background-color: #282e34;
-  padding: 5px;
-  margin: 2% 2% 2% 0;
-  border-radius: 5px;
-  border-width: 0px;
-  display: inline-block;
-  text-align: right;
-}
-
-#download-btn a {
-  text-decoration: none;
-  color: #ddd;
-  font-size: 15px;
-}
-
-#download-btn:hover > a {
-  text-decoration: underline;
-} */
 
 .accordion {
   background-color: #282e34;
