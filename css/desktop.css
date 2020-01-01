@@ -92,19 +92,19 @@ a:hover hr {
 }
 
 .bgimg-hero {
-  background-image: url('../images/bgimg-hero.jpg');
+  background-image: url('https://megan-donnelly.com/images/bgimg-hero.jpg');
 }
 
 .bgimg-projects {
-  background-image: url('../images/bgimg-projects.jpg');
+  background-image: url('https://megan-donnelly.com/images/bgimg-projects.jpg');
 }
 
 .bgimg-experience {
-  background-image: url('../images/bgimg-experience.jpg');
+  background-image: url('https://megan-donnelly.com/images/bgimg-experience.jpg');
 }
 
 .bgimg-contact {
-  background-image: url('../images/bgimg-contact.jpg');
+  background-image: url('https://megan-donnelly.com/images/bgimg-contact.jpg');
   width: 50%;
   float: left;
 }
