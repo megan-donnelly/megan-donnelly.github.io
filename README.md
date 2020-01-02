@@ -1,4 +1,4 @@
-# Megan Donnelly Personal Website
+# Megan Donnelly - Personal Website
 
 Github: https://github.com/megan-donnelly
 
@@ -8,30 +8,30 @@ LinkedIn: https://www.linkedin.com/in/megan-donnelly1/
 
 Technologies I've worked with recently:
 
-### `React`
+- React
 
-### `React Native`
+- React Native
 
-### `Redux`
+- Redux
 
-### `Node.js`
+- Node.js
 
-### `Express`
+- Express
 
-### `PostgreSQL`
+- PostgreSQL
 
-### `Sequelize`
+- Sequelize
 
-### `Expo`
+- Expo
 
-### `Sockets.io`
+- Sockets.io
 
-### `Google Maps API`
+- Google Maps API
 
-### `Charts.js`
+- Charts.js
 
-### `Git`
+- Git
 
-### `HTML5`
+- HTML5
 
-### `CSS3`
+- CSS3
