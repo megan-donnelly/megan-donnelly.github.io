@@ -57,11 +57,10 @@ const navbar = document.getElementById('topnav');
 const hamburger = () => {
   if (menu.style.display === 'block') {
     menu.style.display = 'none';
-    navbar.classList.remove('active');
   } else {
     menu.style.display = 'block';
-    navbar.classList.add('active');
   }
+  navbar.classList.toggle('active');
 };
 
 /* Hide and show nav links spending on view */
@@ -79,15 +78,13 @@ for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
     this.classList.toggle('active');
     let panel = this.nextElementSibling;
-    let caret = this.firstElementChild;
-    if (panel.style.display === 'block' || panel.style.display === '') {
-      panel.style.display = 'none';
-      caret.classList.remove('arrow-down');
-      caret.classList.add('arrow-left');
-    } else {
+    if (panel.style.display === 'none') {
       panel.style.display = 'block';
-      caret.classList.remove('arrow-left');
-      caret.classList.add('arrow-down');
+    } else {
+      panel.style.display = 'none';
     }
+    let caret = this.firstElementChild;
+    caret.classList.toggle('arrow-left');
+    caret.classList.toggle('arrow-down');
   });
 }
