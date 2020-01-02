@@ -78,10 +78,7 @@ a:hover hr {
   display: none;
 }
 
-.bgimg-hero,
-.bgimg-projects,
-.bgimg-experience,
-.bgimg-contact {
+.bgimg {
   position: relative;
   opacity: 0.85;
   background-attachment: fixed;
@@ -91,19 +88,19 @@ a:hover hr {
   min-height: 100%;
 }
 
-.bgimg-hero {
+#bgimg-hero {
   background-image: url('https://megan-donnelly.com/images/bgimg-hero.jpg');
 }
 
-.bgimg-projects {
+#bgimg-projects {
   background-image: url('https://megan-donnelly.com/images/bgimg-projects.jpg');
 }
 
-.bgimg-experience {
+#bgimg-experience {
   background-image: url('https://megan-donnelly.com/images/bgimg-experience.jpg');
 }
 
-.bgimg-contact {
+#bgimg-contact {
   background-image: url('https://megan-donnelly.com/images/bgimg-contact.jpg');
   width: 50%;
   float: left;
@@ -180,19 +177,13 @@ a:hover hr {
 }
 
 /*Section Content*/
-.section-about {
+#section-about {
   color: #777;
   padding: 50px 70px;
   text-align: justify;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-}
-
-.section-about,
-.section-projects,
-.bgimg-experience,
-.bgimg-contact {
   position: relative;
 }
 
@@ -235,7 +226,7 @@ h3 {
   position: relative;
 }
 
-div.section-projects div.inner {
+#section-projects div.inner {
   color: #fff;
   background-color: #8d9aa5;
   letter-spacing: 1px;
@@ -264,7 +255,7 @@ div.section-projects div.inner {
   flex-direction: column;
 }
 
-.project-btn {
+.generic-btn {
   color: #fff;
   text-decoration: none;
   width: 150px;
@@ -296,7 +287,7 @@ div.section-projects div.inner {
   max-height: 80%;
 }
 
-div.section-experience div.inner {
+#section-experience div.inner {
   color: #ddd;
   background-color: #282e34;
   text-align: center;
@@ -304,14 +295,14 @@ div.section-experience div.inner {
   text-align: justify;
 }
 
-div.section-contact.outer {
+#section-contact.outer {
   width: 50%;
   height: 100%;
   float: right;
   background-color: #434d56;
 }
 
-div.section-contact div.inner {
+#section-contact .inner {
   color: #f7f7f7;
   text-align: left;
   letter-spacing: 1px;
@@ -386,19 +377,19 @@ span.date {
   float: right;
 }
 
-.footer-icons img {
-  width: 45px;
-}
-
 .inner a {
   text-decoration: none;
 }
 
-h3.contact {
+#contact-name {
   color: #f7f7f7;
   font-size: 20px;
 }
 
-div.footer-icons {
+#footer-icons img {
+  width: 45px;
+}
+
+#footer-icons {
   padding-top: 20px;
 }

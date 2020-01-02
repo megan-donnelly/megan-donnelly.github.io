@@ -80,10 +80,7 @@ div#nav-links a:hover {
   padding: 0px 5px;
 }
 
-.bgimg-hero,
-.bgimg-projects,
-.bgimg-experience,
-.bgimg-contact {
+.bgimg {
   position: relative;
   opacity: 0.85;
   background-attachment: scroll;
@@ -93,19 +90,19 @@ div#nav-links a:hover {
   min-height: 100%;
 }
 
-.bgimg-hero {
+#bgimg-hero {
   background-image: url('https://megan-donnelly.com/images/bgimg-hero.jpg');
 }
 
-.bgimg-projects {
+#bgimg-projects {
   background-image: url('https://megan-donnelly.com/images/bgimg-projects.jpg');
 }
 
-.bgimg-experience {
+#bgimg-experience {
   background-image: url('https://megan-donnelly.com/images/bgimg-experience.jpg');
 }
 
-.bgimg-contact {
+#bgimg-contact {
   background-image: url('https://megan-donnelly.com/images/bgimg-contact.jpg');
 }
 
@@ -178,7 +175,7 @@ div#nav-links a:hover {
   background: #814f8f;
   color: white;
 }
-.section-about {
+#section-about {
   color: #777;
   background-color: white;
   padding: 50px 30px;
@@ -225,7 +222,7 @@ h3 {
   position: relative;
 }
 
-div.section-projects div.inner {
+#section-projects div.inner {
   color: #fff;
   background-color: #8d9aa5;
   letter-spacing: 1px;
@@ -233,12 +230,12 @@ div.section-projects div.inner {
   padding: 30px 40px;
 }
 
-.section-projects h3,
-.section-projects h4 {
+#section-projects h3,
+#section-projects h4 {
   letter-spacing: 3px;
 }
 
-.project-btn {
+.generic-btn {
   color: #fff;
   text-decoration: none;
   width: 150px;
@@ -272,7 +269,7 @@ div.section-projects div.inner {
   width: 70%;
 }
 
-div.section-experience div.inner {
+#section-experience div.inner {
   color: #ddd;
   background-color: #282e34;
   text-align: center;
@@ -280,7 +277,7 @@ div.section-experience div.inner {
   text-align: justify;
 }
 
-div.section-contact div.inner {
+#section-contact div.inner {
   color: #f7f7f7;
   background-color: #434d56;
   text-align: center;
@@ -364,19 +361,19 @@ span.date {
   display: block;
 }
 
-.footer-icons img {
-  width: 45px;
-}
-
 .inner a {
   text-decoration: none;
 }
 
-h3.contact {
+#contact-name {
   color: #f7f7f7;
   font-size: 20px;
 }
 
-div.footer-icons {
+#footer-icons img {
+  width: 45px;
+}
+
+#footer-icons {
   padding-top: 20px;
 }
