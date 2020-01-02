@@ -206,6 +206,7 @@ img#headshot {
   height: 30%;
   width: 30%;
   margin-left: 3%;
+  align-self: flex-start;
 }
 
 #about-technologies {
