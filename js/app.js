@@ -1,7 +1,47 @@
 /* Top Nav Scrolled */
+
+const isAnyPartOfElementInViewport = (el, nav) => {
+  const rect = el.getBoundingClientRect();
+  const windowHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+  const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+  const vertInView =
+    rect.top - 80 <= windowHeight && rect.top + rect.height >= 80;
+  const horInView = rect.left <= windowWidth && rect.left + rect.width >= 0;
+  nav.classList.toggle('active', vertInView && horInView);
+};
+
+const isElementInViewport = (el, nav) => {
+  const rect = el.getBoundingClientRect();
+  const windowHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+  const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+  const vertInView =
+    rect.top + 505 <= windowHeight && rect.top + rect.height >= 80;
+  const horInView = rect.left <= windowWidth && rect.left + rect.width >= 0;
+  nav.classList.toggle('active', vertInView && horInView);
+};
+
 window.addEventListener('scroll', function() {
   const nav = document.getElementById('topnav');
   nav.classList.toggle('scrolled', window.pageYOffset > nav.offsetHeight);
+
+  const navAbout = document.getElementById('nav-about');
+  const sectionAbout = document.getElementById('section-about');
+
+  const navProjects = document.getElementById('nav-projects');
+  const sectionProjects = document.getElementById('section-projects');
+
+  const navExperience = document.getElementById('nav-experience');
+  const sectionExperience = document.getElementById('section-experience');
+
+  const navContact = document.getElementById('nav-contact');
+  const sectionContact = document.getElementById('section-contact');
+
+  isElementInViewport(sectionAbout, navAbout);
+  isAnyPartOfElementInViewport(sectionProjects, navProjects);
+  isAnyPartOfElementInViewport(sectionExperience, navExperience);
+  isElementInViewport(sectionContact, navContact);
 });
 
 /* Smooth Scroll to Sections */

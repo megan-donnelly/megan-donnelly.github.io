@@ -69,7 +69,8 @@ a hr {
   background-color: #777;
 }
 
-a:hover hr {
+a:hover hr,
+a.active hr {
   display: block;
 }
 
@@ -220,10 +221,6 @@ h3 {
 
 .panel h3 {
   color: #111;
-}
-
-.outer {
-  position: relative;
 }
 
 #section-projects div.inner {
