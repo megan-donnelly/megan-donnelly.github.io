@@ -7,14 +7,14 @@ html {
 }
 
 /* Style the navigation menu */
-.topnav {
+#topnav {
   width: 100%;
   position: fixed;
   z-index: 10;
   background-color: none;
 }
 
-.topnav.scrolled {
+#topnav.scrolled {
   background-color: #fff !important;
   opacity: 0.85;
   transition: background-color 200ms linear;
@@ -34,14 +34,14 @@ html {
   padding-left: 45px;
 }
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #nav-links {
+#nav-links {
   float: right;
   margin-top: -66px;
   margin-right: 60px;
 }
 
 /* Style navigation menu links */
-.topnav a {
+#topnav a {
   color: #fff;
   margin-top: 14px;
   margin-left: 20px;
@@ -53,7 +53,7 @@ html {
   float: left;
 }
 
-.topnav.scrolled a {
+#topnav.scrolled a {
   color: #777;
 }
 
@@ -65,7 +65,7 @@ a hr {
   display: none;
 }
 
-.topnav.scrolled a hr {
+#topnav.scrolled a hr {
   background-color: #777;
 }
 
@@ -74,7 +74,7 @@ a:hover hr {
 }
 
 /* Style the hamburger menu */
-.topnav a.icon {
+#topnav a.icon {
   display: none;
 }
 

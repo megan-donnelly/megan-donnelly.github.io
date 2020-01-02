@@ -1,22 +1,20 @@
 /* Top Nav Scrolled */
-$(function() {
-  $(document).scroll(function() {
-    var $nav = $('.topnav');
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
+window.addEventListener('scroll', function() {
+  const nav = document.getElementById('topnav');
+  nav.classList.toggle('scrolled', window.pageYOffset > nav.offsetHeight);
 });
 
 /* Smooth Scroll to Sections */
-function scrollToDiv(id) {
-  let elmnt = document.getElementById(id);
+const scrollToDiv = id => {
+  const elmnt = document.getElementById(id);
   elmnt.scrollIntoView({ behavior: 'smooth' });
-}
+};
 
 /*  Toggle between showing and hiding the navigation menu
 links when the user clicks on the hamburger menu / bar icon */
-let menu = document.getElementById('nav-links');
-let navbar = document.getElementById('nav');
-let hamburger = () => {
+const menu = document.getElementById('nav-links');
+const navbar = document.getElementById('topnav');
+const hamburger = () => {
   if (menu.style.display === 'block') {
     menu.style.display = 'none';
     navbar.classList.remove('active');
@@ -27,8 +25,8 @@ let hamburger = () => {
 };
 
 /* Hide and show nav links spending on view */
-$(window).resize(function() {
-  if ($(window).width() >= 870) {
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 870) {
     menu.style.display = 'block';
   } else {
     menu.style.display = 'none';
@@ -36,21 +34,20 @@ $(window).resize(function() {
 });
 
 /* Expand and collapse experience page sections */
-let acc = document.getElementsByClassName('accordion');
-
+const acc = document.getElementsByClassName('accordion');
 for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function(element) {
+  acc[i].addEventListener('click', function() {
     this.classList.toggle('active');
     let panel = this.nextElementSibling;
-    let car = $(this).children(':first');
+    let caret = this.firstElementChild;
     if (panel.style.display === 'block' || panel.style.display === '') {
       panel.style.display = 'none';
-      car.removeClass('arrow-down');
-      car.addClass('arrow-left');
+      caret.classList.remove('arrow-down');
+      caret.classList.add('arrow-left');
     } else {
       panel.style.display = 'block';
-      car.removeClass('arrow-left');
-      car.addClass('arrow-down');
+      caret.classList.remove('arrow-left');
+      caret.classList.add('arrow-down');
     }
   });
 }
