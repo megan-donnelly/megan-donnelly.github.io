@@ -178,8 +178,8 @@ div#nav-links a:hover {
 #section-about {
   color: #777;
   background-color: white;
-  padding: 50px 30px;
-  text-align: justify;
+  padding: 50px 20px;
+  text-align: left;
 }
 
 #jump-about,
@@ -227,7 +227,7 @@ h3 {
   background-color: #8d9aa5;
   letter-spacing: 1px;
   text-align: left;
-  padding: 30px 40px;
+  padding: 30px 20px;
 }
 
 #section-projects h3,
@@ -272,9 +272,8 @@ h3 {
 #section-experience div.inner {
   color: #ddd;
   background-color: #282e34;
-  text-align: center;
   padding: 0px;
-  text-align: justify;
+  text-align: left;
 }
 
 #section-contact div.inner {
@@ -287,9 +286,9 @@ h3 {
 }
 
 #download {
-  text-align: right;
+  text-align: left;
   padding-top: 30px;
-  padding-right: 30px;
+  padding-left: 5px;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
@@ -318,7 +317,7 @@ button.active,
 }
 
 .panel {
-  padding: 0 30px;
+  padding: 0 20px;
   display: block;
   background-color: #ddd;
   color: #333333;
