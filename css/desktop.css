@@ -69,6 +69,10 @@ a hr {
   background-color: #777;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 a:hover hr,
 a.active hr {
   display: block;
